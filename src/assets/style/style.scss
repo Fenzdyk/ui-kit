@@ -1,0 +1,27 @@
+button {
+  background-color: transparent;
+  display: flex;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  &:active {
+    outline: none;
+    border: none;
+  }
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.nowrap {
+  white-space: nowrap;
+}

@@ -1,0 +1,32 @@
+@import "fonts";
+@import "./variables/ThemesLight";
+@import "./variables/ThemesDark";
+@import "./variables/CornerRadius";
+@import "./variables/Global";
+@import "./variables/Spacing";
+@import "./variables/Stroke";
+@import "./variables/Alias";
+@import "./style";
+
+:root {
+  --popper-theme-background-color: var(--surface-tetrady-default);
+  --popper-theme-background-color-hover: var(--surface-tetrady-default);
+  --popper-theme-text-color: var(--foreground-primary);
+  --popper-theme-border-color: var(--surface-tetrady-default);
+  --popper-theme-border-width: 0px;
+  --popper-theme-border-radius: 4px;
+  --popper-theme-padding: 8px 12px;
+  --popper-theme-box-shadow: 0 6px 30px -6px rgba(0, 0, 0, 0.25);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Roboto, serif;
+  background-color: var(--surface-primary-default);
+  color: var(--foreground-primary);
+  height: 100%;
+}
+
