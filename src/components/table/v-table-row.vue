@@ -23,14 +23,14 @@ const props = defineProps({
 <style scoped lang="scss">
 .table {
   p {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   span {
     font-family: Roboto;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
     color: #AAABAD;
   }
@@ -41,7 +41,7 @@ const props = defineProps({
       font-size: 14px;
       font-weight: 400;
       line-height: 18px;
-      letter-spacing: 0em;
+      letter-spacing: 0;
       text-align: left;
       padding: 12px 20px;
     }

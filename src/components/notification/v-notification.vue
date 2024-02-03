@@ -1,38 +1,30 @@
 <template>
-  <notifications
-    width="460"
-    position="bottom right"
-    group="defaultNotification"
-  >
-    <template #body="props">
-      <div class="notification">
-        <div class="notification-icon">
-          <img
-            :src="icons[props.item.type]"
-            alt="success"
-            width="50"
-            height="50"
-          >
-        </div>
-        <div class="notification-massage">
-          <div class="notification-title">
-            {{ props.item.title }}
-          </div>
-          <div class="notification-text">
-            {{ props.item.text }}
-          </div>
-        </div>
-        <v-icon
-          class="close"
-          size="s"
-          name="icn_s_cancel"
-          width="20"
-          :fill="'var(--foreground-secondary)'"
-          @click="props.close"
-        />
+  <div class="notification">
+    <div class="notification-icon">
+      <img
+        :src="icons[props.item.type]"
+        alt="success"
+        width="50"
+        height="50"
+      >
+    </div>
+    <div class="notification-massage">
+      <div class="notification-title">
+        {{ props.item.title }}
       </div>
-    </template>
-  </notifications>
+      <div class="notification-text">
+        {{ props.item.text }}
+      </div>
+    </div>
+    <v-icon
+      class="close"
+      size="s"
+      name="icn_s_cancel"
+      width="20"
+      :fill="'var(--foreground-secondary)'"
+      @click="props.close"
+    />
+  </div>
 </template>
 
 <script setup>
